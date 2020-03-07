@@ -8,3 +8,15 @@
 
 ## defect
 + callback hell
+
+### database structure
+```SQL
+CREATE TABLE `ip_table` (
+	`ip_addr` TEXT NOT NULL DEFAULT '',
+	`req_times` INT(11) NOT NULL DEFAULT 0,
+	`dead_time` DATETIME NULL DEFAULT NULL
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+;
+```
