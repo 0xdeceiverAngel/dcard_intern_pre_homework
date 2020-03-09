@@ -45,8 +45,8 @@ router.get('/draw', function (req, res) {
 
 
             req_times = result[0]['req_times'] + 1;
-            if (req_times > 999) {  //check req_time 
-                // if >999
+            if (req_times > 1000) {  //check req_time 
+                // if >1000
                 current_datetime = new Date();
                 current_datetime.setHours(current_datetime.getHours() + 1 + 8);//+8 是因為時差 
                 current_datetime = current_datetime.toISOString().slice(0, 19).replace('T', ' ');
