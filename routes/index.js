@@ -9,7 +9,9 @@ router.get('/', function (req, res) {
       'X-RateLimit-Remaining': '',
       'X-RateLimit-Reset': ''
   });
-  res.send('server on');
+  var path=__dirname;
+  path=path.slice(0,path.length-7); //remove string ->"routes" 
+  res.sendFile(path +'/public/index.html');
 });
 
 module.exports = router;
