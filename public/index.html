@@ -1,14 +1,31 @@
 
 <!doctype html>
 <html lang="en">
-<head>
-    <title>dcard_intern_pre_homework</title>
-</head>
-<body>
-<h1>Server on </h1>
-<a href="/draw">抽卡</a>
-<P></P>
-<a href="/alldata">資料庫所有資料</a>
+    <head>
+        <title>dcard_intern_pre_homework</title>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+                $(document).ready(function(){
+                  $("#draw").click(function(){
+                  htmlobj=$.ajax({url:"/draw",async:false});
+                  $("#res").html(htmlobj.responseText);
+                  });
 
-</body>
+                  $(document).ready(function(){
+                  $("#alldata").click(function(){
+                  htmlobj=$.ajax({url:"/alldata",async:false});
+                  $("#res").html(htmlobj.responseText);
+                  });
+                });
+                });</script>
+    </head>
+    <body>
+        <h1>Server on </h1>
+        <button id="draw" type="button">抽卡</button>
+        <P></P>
+        <button id="alldata" type="button">資料庫所有資料</button>
+        <P></P>
+        <div id="res"><h2></h2></div>
+    </body>
 </html>
