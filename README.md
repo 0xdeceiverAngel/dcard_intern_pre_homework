@@ -11,7 +11,7 @@ cd dcard_intern_pre_homework
 npm install
 npm start
 ```
-visit http://127.0.0.1
+visit http://127.0.0.1:5000
 ## defect
 + callback hell
 ## technic use
