@@ -10,7 +10,7 @@ app.get('/', indexRouter);
 app.get('/alldata', alldata);
 app.get('/draw', draw);
 
-app.listen(80, function () {
-  console.log('app listening on port 80!');
+app.listen(5000, function () {
+  console.log('app listening on port 5000!');
 });
 module.exports = app;
