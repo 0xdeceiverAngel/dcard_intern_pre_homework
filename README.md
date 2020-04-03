@@ -1,5 +1,7 @@
-## demand
+## demo
+[![](http://img.youtube.com/vi/0Y_O4xTX2Nc/0.jpg)](http://www.youtube.com/watch?v=0Y_O4xTX2Nc "")
 
+## demand
 + 為了不讓伺服器過載，請設計一個 middleware
 + 限制每小時來自同一個 IP 的請求數量不得超過 1000
 + 在 response headers 中加入剩餘的請求數量 (X-RateLimit-Remaining) 以及 rate + limit 歸零的時間 (X-RateLimit-Reset)
